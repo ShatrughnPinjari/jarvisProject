@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    /* font-family: Arial, sans-serif; */
+    /* background: #162052; Same background color as index.html */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+    background: linear-gradient(90deg, #833ab4, #fd1d1d, #fcb045);
+}
+
+.navigation {
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background: #1e232f; /*Same background color as index.html */
+    padding: 10px 0;
+}
+
+.navigation a {
+    position: relative;
+    text-decoration: none;
+    padding: 15px 25px;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+}
+
+#marker {
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 90px;
+    border-bottom: 5px solid #08f9ff;
+    background: linear-gradient(0deg, #08f9ff33, transparent);
+
+    /* transition: 0.5s; */
+    transition: left 0.3s ease-in-out, width 0.3s ease-in-out; /* Add transitions */
+    pointer-events: none;
+    filter: drop-shadow(0 5px 25px #08f9ff)
+}
+
+.about-section {
+    position: absolute;
+    top: 5%;
+    max-width: 800px;
+    width: 800px;
+    margin: 50px auto;
+    /* background-color: #fff; */
+    background: rgba(0,0,0,0.5);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 20px;
+    /* background-color: #1e232f; Background color */
+    background-color: rgb(245 158 11);
+    padding: 15px; /* Padding */
+    border-radius: 10px; /* Border radius */
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.section-header h1 {
+    color: #fff;
+}
+
+.section-content {
+    padding: 20px;
+}
+
+.purpose h2,
+.development-team h2,
+.technology-stack h2,
+.development-process h2,
+.future-plans h2,
+.contact-information h2 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.purpose {
+    background: linear-gradient(90deg, #833ab4, #fd1d1d, #fcb045); /* Linear gradient background */
+    padding: 20px; /* Padding */
+    margin: 20px 0; /* Margin */
+    border-radius: 10px; /* Border radius */
+}
+
+.section-feature {
+    /* margin-top:10px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: linear-gradient(90deg, #833ab4, #fd1d1d, #fcb045); /* Linear gradient background */
+    padding: 20px; /* Padding */
+    margin: 20px 0; /* Margin */
+    border-radius: 10px; /* Border radius */
+}
+
+.feature-card {
+    width: calc(33.33% - 20px);
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card h2 {
+    color: #333;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+
+.feature-card p {
+    color: #666;
+    font-size: 0.9em;
+}
+
+#feature {
+    color: #fff;
+    margin-top: 20px 0;
+    background: linear-gradient(90deg, #833ab4, #fd1d1d, #fcb045); /* Linear gradient background */
+    border-radius: 10px; /* Border radius */
+    padding-left: 20px;
+}
+
+#Tech-stack {
+    color: #fff;
+    /* margin-top: 20px ; */
+    /* margin-bottom: 20px; */
+    /* background: linear-gradient(90deg, #833ab4, #fd1d1d, #fcb045); Linear gradient background */
+    padding: 5px; /* Padding */
+    margin: 10px 0; /* Margin */
+    border-radius: 10px; /* Border radius */
+    padding-left:10px;
+    /*
+    * Created with https://www.css-gradient.com
+    * Gradient link: https://www.css-gradient.com/?c1=e2c72c&c2=f3f486&gt=l&gd=dtl
+   */
+    background: #E2C72C;
+    background: linear-gradient(135deg, #E2C72C, #F3F486);
+}
+
+
+p {
+    color: #fff;
+}
+
+
+.technology-stack {
+    background: linear-gradient(90deg, #833ab4, #fd1d1d, #fcb045); /* Linear gradient background */
+    padding: 20px; /* Padding */
+    margin: 20px 0; /* Margin */
+    border-radius: 10px; /* Border radius */
+}
+
+
+.technology-stack h2 {
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.stack-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tech-card {
+    width: calc(50% - 20px); /* Adjusted width to occupy half of the container */
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tech-card img {
+    width: 100px; /* Adjust image size as needed */
+    margin-bottom: 10px;
+}
+
+.tech-card p {
+    color: #666;
+    font-size: 0.9em;
+}
+
+@media (max-width: 700px) { /* Adjust breakpoint as needed */
+    .stack-cards .tech-card {
+        width: 100%; /* Occupies full width on smaller screens */
+        margin-right: 0; /* Removes right margin to prevent gaps */
+    }
+}
+
+.development-process {
+    /* margin-top: 20px 0; */
+    background: linear-gradient(90deg, #833ab4, #fd1d1d, #fcb045); /* Linear gradient background */
+    padding: 20px; /* Padding */
+    margin: 20px 0; /* Margin */
+    border-radius: 10px; /* Border radius */
+}
+
+.development-process h2 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.development-process ol {
+    list-style-type: none;
+}
+
+.development-process li {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.development-process h3 {
+    color: rgb(45 212 191);
+    margin-bottom: 10px;
+}
+
+.development-process ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.development-process p {
+    color: #fff;
+}
+
+#development-header {
+    /* background: linear-gradient(90deg, #833ab4, #fd1d1d, #fcb045); Linear gradient background */
+    padding: 20px; /* Padding */
+    margin: 20px 0; /* Margin */
+    border-radius: 10px; /* Border radius */
+    color: rgb(52 211 153);
+    /* background: #FCF79F; */
+    /* background: linear-gradient(135deg, #FCF79F, #C3C708); */
+    /*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=721cca&c2=69049e&gt=l&gd=dtl
+*/
+background: #721CCA;
+background: linear-gradient(135deg, #721CCA, #69049E);
+}
+

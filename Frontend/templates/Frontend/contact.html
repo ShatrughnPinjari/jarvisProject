@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'Frontend/contact.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navigation">
+        <a href="{% url 'index' %}">Home</a>
+        <a href="{% url 'about' %}">About</a>
+        <a href="{% url 'team' %}">Team</a>
+        <a href="{% url 'contact' %}">Contact</a>
+        <div id="marker"></div>
+    </nav>
+
+    <div class="contact-container">
+        <h2>Contact Us</h2>
+        <div class="contact-details">
+            <p><strong>Email:</strong>
+                <ol>
+                    <li>sanketsalokhe3735@gmail.com</li>
+                    <li>krushnalpatil3500@gmail.com</li>
+                    <li>shubhamgutthe1@gmail.com</li>
+                    <li>yashp74.3816@gmail.com</li>
+                    <li>shatrughnpinjari20242gmail.com</li>
+                </ol>
+            </p>
+            <p><strong>Phone:</strong> +91 7448079292, +91 8830218135, +91 7218670395, +91 9145591500, +91 9172368135</p>
+            <p><strong>Address:</strong> Kolhapur, Maharashtra, India</p>
+        </div>
+        <div class="rating-section">
+            <h3>Rate our Application:</h3>
+            <div class="stars" id="starRating">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+            </div>
+            <div class="numerical-rating" id="numericalRating">0</div>
+        </div>
+        <div class="feedback-section">
+            <h3>Feedback:</h3>
+            <textarea id="feedback" placeholder="Enter your feedback here"></textarea>
+            <button id="submitFeedback">Submit</button>
+        </div>
+    </div>
+
+    <!-- Include the EmailJS library -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="{% static 'Frontend/contact.js' %}"></script>
+</body>
+
+</html>

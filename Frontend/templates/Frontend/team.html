@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Team Members</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'Frontend/team.css' %}" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    </head>
+
+    <body>
+        <nav class="navigation">
+            <a href="{% url 'index' %}">Home</a>
+            <a href="{% url 'about' %}">About</a>
+            <a href="{% url 'team' %}">Team</a>
+            <a href="{% url 'contact' %}">Contact</a>
+            <div id="marker"></div>
+        </nav>
+
+        <div class="team-container">
+            <div class="member-card top-left">
+                <div class="member-image">
+                    <img src="{% static 'Frontend/Sanket.jpg' %}" alt="sanket" />
+                </div>
+                <div class="member-details">
+                    <h3>Mr. Sanket Ashok Salokhe</h3>
+                    <p>Backend Developer</p>
+                </div>
+            </div>
+            <div class="member-card top-right">
+                <div class="member-image">
+                    <img src="{% static 'Frontend/krushnal.jpg' %}" alt="krushnal" />
+                </div>
+                <div class="member-details">
+                    <h3>Mr. Krushnal Uttam Patil</h3>
+                    <p>Full Stack Developer</p>
+                </div>
+            </div>
+            <div class="member-card bottom-left">
+                <div class="member-image">
+                    <img src="{% static 'Frontend/Shubham.jpg' %}" alt="Shubham" />
+                </div>
+                <div class="member-details">
+                    <h3>Mr. Shubham Balajirao Gutthe</h3>
+                    <p>Backend Developer</p>
+                </div>
+            </div>
+            <div class="member-card bottom-right">
+                <div class="member-image">
+                    <img src="{% static 'Frontend/Yash.jpg' %}" alt="yash" />
+                </div>
+                <div class="member-details">
+                    <h3>Mr. Yash Sanjay Patil</h3>
+                    <p>Frontend Developer</p>
+                </div>
+            </div>
+            <div class="member-card middle">
+                <div class="member-image">
+                    <img src="{% static 'Frontend/Shatrughn.jpg' %}" alt="Shatrughn" />
+                </div>
+                <div class="member-details">
+                    <h3>Mr. Shatrughn Maruti Pinjari</h3>
+                    <p>Full Stack Developer</p>
+                </div>
+            </div>
+        </div>
+
+        <script src="{% static 'Frontend/team.js' %}"></script>
+    </body>
+</html>

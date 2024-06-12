@@ -1,0 +1,268 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>About Jarvis</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'Frontend/about.css' %}" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    </head>
+
+    <body>
+        <nav class="navigation">
+            <a href="{% url 'index' %}">Home</a>
+            <a href="{% url 'about' %}">About</a>
+            <a href="{% url 'team' %}">Team</a>
+            <a href="{% url 'contact' %}">Contact</a>
+            <div id="marker"></div>
+        </nav>
+        <div class="about-section">
+            <div class="section-header">
+                <h1>About Jarvis</h1>
+            </div>
+            <div class="section-content">
+                <div class="purpose">
+                    <h2>Purpose</h2>
+                    <p>
+                        The purpose of Jarvis is to provide users with a seamless interaction experience with a virtual assistant. Users can rely on Jarvis to assist them with a wide range of tasks, including fetching news updates, providing weather reports, sharing jokes, retrieving information about movies and TV series, facilitating email communication, and much more. Jarvis aims to simplify daily tasks and enhance productivity by offering personalized assistance tailored to the user's needs.
+                    </p>
+                </div>
+                <div id="feature">
+                    <h2>Features</h2>
+                </div>
+                <div class="section-feature">
+                    <div class="feature-card">
+                        <h2>Jokes</h2>
+                        <hr />
+                        <strong>Commands:</strong>
+                        <p>"Tell me a joke"</p>
+                        <p>"Tell joke"</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <h2>News</h2>
+                        <hr />
+                        <strong>Commands:</strong>
+                        <p>"Tell me news headlines"</p>
+                        <p>"what are today's top news"</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <h2>IP Address</h2>
+                        <hr />
+                        <strong>Commands:</strong>
+                        <p>"what is my ip address"</p>
+                        <p>"get my ip address"</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <h2>Movies</h2>
+                        <hr />
+                        <strong>Commands:</strong>
+                        <p>"Find trending movies"</p>
+                        <p>"List some trending movies"</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <h2>Tv Series</h2>
+                        <hr />
+                        <strong>Commands:</strong>
+                        <p>"Find trending tv web series"</p>
+                        <p>"List some trending tv web series"</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <h2>Weather</h2>
+                        <hr />
+                        <strong>Commands:</strong>
+                        <p>"What's weather the today"</p>
+                        <p>"Get weather report"</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <h2>Internet Speedtest</h2>
+                        <hr />
+                        <strong>Commands:</strong>
+                        <p>"Get my internet speed"</p>
+                        <p>"Check internet speed"</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <h2>System Stats</h2>
+                        <hr />
+                        <strong>Commands:</strong>
+                        <p>"Fetch system stats"</p>
+                        <p>"Get system resource consumption"</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <h2>System Info</h2>
+                        <hr />
+                        <strong>Commands:</strong>
+                        <p>"fetch system information"</p>
+                        <p>"fetch system specifications"</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <h2>Email</h2>
+                        <hr />
+                        <strong>Commands:</strong>
+                        <p>"Send an email"</p>
+                        <p>"Send email"</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <h2>Screenshot</h2>
+                        <hr />
+                        <strong>Commands:</strong>
+                        <p>"take screenshot"</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <h2>Wikipedia</h2>
+                        <hr />
+                        <strong>Commands:</strong>
+                        <p>"tell me about virat kohli"</p>
+                        <p>"tell about python programming language"</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <h2>Math</h2>
+                        <hr />
+                        <strong>Commands:</strong>
+                        <p>"what is 10 + 10"</p>
+                        <p>"solve for 9 multiply 5"</p>
+                        <p>"what is 34 minus 456"</p>
+                        <p>"what is 34783 divided by 456"</p>
+                        <p>"what is 345 percentage of 12345"</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <h2>Open Website</h2>
+                        <hr />
+                        <strong>Commands:</strong>
+                        <p>"open amazon"</p>
+                        <p>"open youtube"</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <h2>Open App</h2>
+                        <hr />
+                        <strong>Commands:</strong>
+                        <p>"open powerpoint"</p>
+                        <p>"open word"</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <h2>Get Data</h2>
+                        <hr />
+                        <strong>Commands:</strong>
+                        <p>"show chat history"</p>
+                        <p>"show chat history"</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <h2>Note</h2>
+                        <hr />
+                        <strong>Commands:</strong>
+                        <p>"take note"</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <h2>Exit</h2>
+                        <hr />
+                        <strong>Commands:</strong>
+                        <p>"quit"</p>
+                        <p>"exit"</p>
+                        <p>"terminate"</p>
+                    </div>
+                </div>
+
+                <div class="technology-stack">
+                    <div id="Tech-stack">
+                        <h2>Technology Stack</h2>
+                    </div>
+                    <div class="stack-cards">
+                        <div class="tech-card">
+                            <img src="{% static 'Frontend/python.png' %}" alt="python logo" />
+                            <p><strong>Python</strong> is the backbone of Jarvis, facilitating seamless integration of various functionalities through its simplicity, extensive libraries, and versatility in tasks such as natural language processing, web scraping, and automation.</p>
+                        </div>
+
+                        <div class="tech-card">
+                            <img src="{% static 'Frontend/html.png' %}" alt="html logo" />
+                            <p><strong>HTML</strong> plays a pivotal role in Jarvis by structuring and presenting content to users. It ensures a user-friendly interface for interactions with the virtual assistant, enabling seamless navigation and intuitive user experiences.</p>
+                        </div>
+
+                        <div class="tech-card">
+                            <img src="{% static 'Frontend/CSS.png' %}" alt="css logo" />
+                            <p><strong>CSS</strong> enhances the visual appeal and layout of Jarvis, ensuring a polished and cohesive design across all interfaces. It enables customization of styles, including colors, fonts, and layouts, to create an engaging and intuitive user experience.</p>
+                        </div>
+
+                        <div class="tech-card">
+                            <img src="{% static 'Frontend/JavaScript.png' %}" alt="javascript logo" />
+                            <p><strong>JavaScript</strong> powers dynamic interactions within Jarvis, enabling features like voice recognition, real-time updates, and seamless communication with backend services. It ensures an interactive and responsive user experience, facilitating smooth navigation and efficient task execution.</p>
+                        </div>
+
+                        <div class="tech-card">
+                            <img src="{% static 'Frontend/Django.png' %}" alt="Django logo" />
+                            <p><strong>Django</strong> Django is used to create a web application interface for JARVIS. It enables users to interact with JARVIS through a web browser, facilitating features like user authentication, session management, and handling web requests to process user commands and display responses dynamically. Django provides a robust framework for integrating the NLP model with web functionalities, making JARVIS accessible over the web.</p>
+                        </div>
+
+                        <div class="tech-card">
+                            <img src="{% static 'Frontend/DeepLearning.jpg' %}" alt="deep learning logo" />
+                            <p><strong>Deep learning</strong> empowers Jarvis with advanced capabilities, enabling it to understand and respond to user queries more intelligently. Through deep neural networks, Jarvis can process complex data, recognize patterns, and provide personalized assistance, enhancing user interactions and overall performance</p>
+                        </div>
+
+                        <div class="tech-card">
+                            <img src="{% static 'Frontend/MachineLearning.jpg' %}" alt="machine learning" />
+                            <p><strong>Machine learning</strong> empowers Jarvis with the ability to adapt and improve its performance over time by analyzing data and learning from user interactions. Through machine learning algorithms, Jarvis can make predictions, recommend personalized actions, and continuously enhance its capabilities, providing more efficient and effective assistance to users.</p>
+                        </div>
+
+                        <div class="tech-card">
+                            <img src="{% static 'Frontend/NLP.png' %}" alt="nlp logo" />
+                            <p><strong>NLP</strong> (Natural Language Processing) equips Jarvis with the ability to understand and interpret human language, enabling seamless communication between users and the virtual assistant. By processing and analyzing text and speech inputs, NLP allows Jarvis to extract meaning, identify intent, and generate appropriate responses, enhancing the user experience and functionality of the system.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="development-process">
+                    <div id="development-header">
+                        <h2>Development Process</h2>
+                    </div>
+                    <ol>
+                        <li>
+                            <h3>Backend Development (Python)</h3>
+                            <p>Backend development involves creating the core functionality of Jarvis using Python. This includes:</p>
+                            <ul>
+                                <li>Developing an NLP (Natural Language Processing) model to understand user queries.</li>
+                                <li>Utilizing deep learning and machine learning libraries for speech recognition and text-to-speech (TTS) functionalities.</li>
+                                <li>Adding different modules such as the Gmail module, system operation module, browser module, and database module to enhance Jarvis's capabilities.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3>Frontend Development (HTML, CSS, JavaScript)</h3>
+                            <p>Frontend development focuses on creating the user interface for Jarvis using HTML, CSS, and JavaScript. This includes:</p>
+                            <ul>
+                                <li>Designing and styling the user interface to ensure an intuitive and visually appealing experience.</li>
+                                <li>Implementing interactive features using JavaScript to enhance user interaction.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3>API Development</h3>
+                            <p>The API acts as a bridge between the frontend and backend, enabling communication between the two layers. The development process includes:</p>
+                            <ul>
+                                <li>Designing and implementing RESTful APIs to facilitate communication between the frontend and backend.</li>
+                                <li>Handling requests and responses to ensure seamless interaction between the user interface and backend functionality.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <script src="{% static 'Frontend/about.js' %}"></script>
+    </body>
+</html>
